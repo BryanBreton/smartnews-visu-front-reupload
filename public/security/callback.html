@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Callback</title>
+  </head>
+
+  <body>
+    <script src="oidc-client.min.js"></script>
+    <script>
+      var mgr = new Oidc.UserManager({
+        response_mode: 'query',
+        userStore: new Oidc.WebStorageStateStore({ store: window.sessionStorage }),
+        loadUserInfo: false
+      })
+
+      mgr
+        .signinRedirectCallback()
+        .then(user => {
+          // return to the route saved before signIn
+          const routeToReach = user.state.routeToReach
+          if (routeToReach) {
+            window.location.href = routeToReach
+          } else {
+            window.location.href = '../'
+          }
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    </script>
+  </body>
+</html>

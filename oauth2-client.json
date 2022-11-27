@@ -1,0 +1,6 @@
+{
+  "name": "smartnews-visu-front",
+  "applicationType": "spa",
+  "internet": false,
+  "intranet": false
+}

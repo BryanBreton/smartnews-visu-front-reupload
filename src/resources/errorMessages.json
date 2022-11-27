@@ -1,0 +1,4 @@
+{
+  "any.required": "Le champ « <%= fieldLabel %> » est obligatoire",
+  "default": "Une erreur est survenue. Merci de vous rapprocher de votre administrateur ou de contacter le helpdesk."
+}

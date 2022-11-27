@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "web",
+      "package_name": "fr.su.smartnewsvisufront",
+      "sha256_cert_fingerprints": ["8A:9E:14:F3:C1:FC:B9:2A:6F:70:DB:1E:02:E2:14:27:21:48:6D:B5:2E:C1:25:A9:2A:1C:16:F7:64:29:76:88"]
+    }
+  }
+]
